@@ -1,0 +1,27 @@
+<section class="lead box-center space-around">
+  
+  <div class="container">
+    <div class="title">
+      <h3>Formas de terminar a execução de um lambda</h3>
+    </div>
+
+    <div class="content">
+      
+      <div>
+        <h5>Controlled Termination</h5>
+        <pre><code>
+          function handler(event, context) {
+            context.done(null, { ...response })
+          }
+        </code></pre>
+
+        <pre><code>
+          async function handler(event) {
+            return { ...response }
+          }
+        </code></pre>
+      </div>
+    </div>
+
+  </div>
+</section>

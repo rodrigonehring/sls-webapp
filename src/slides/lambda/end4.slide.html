@@ -1,0 +1,27 @@
+<section class="lead box-center space-around">
+  
+  <div class="container">
+    <div class="title">
+      <h3>Formas de terminar a execução de um lambda</h3>
+    </div>
+
+    <div class="content">
+      
+      <div>
+        <h5>Crash - Force Exit</h5>
+        <pre><code>
+          function handler(event, context) {
+            // code...
+            
+            throw new Error('oops')
+
+            // or
+
+            process.exit(1)
+          }
+        </code></pre>
+      </div>
+    </div>
+
+  </div>
+</section>

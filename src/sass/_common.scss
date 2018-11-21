@@ -1,0 +1,43 @@
+section.box-center {
+  height: 100%;
+  padding: 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+
+  &.space-around > .container {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
+
+  .content {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding-bottom: 90px;
+    width: 100%;
+    & > div {
+      width: 100%;
+    }
+  }
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
+  & > div {
+    width: 100%;
+  }
+}
